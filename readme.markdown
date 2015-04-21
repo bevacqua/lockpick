@@ -20,18 +20,26 @@ If `value` is an object, it's converted into an array. The keys in the object ar
 
 ```js
 var things = {
-  a: {
-    b: 'c'
-  },
-  d: {
-    b: 'e'
-  }
+  'toys-r-us': { value: 'mild' },
+  'barbie': { value: 'none' }
 };
-var list = lockpick(things, 'key');
-// <- [{ b: 'c', key: 'a' }, { b: 'e', key: 'd' }]
+lockpick(things, 'provider')
+// <- [
+//  { provider: 'toys-r-us', value: 'mild' },
+//  { provider: 'barbie', value: 'none' }
+// ]
+```
 
-var more = lockpick(list, 'key');
-// <- { a: { b: 'c', key: 'a' }, d: { b: 'e', key: 'd' } }
+```js
+var things = [
+  { provider: 'toys-r-us', value: 'mild' },
+  { provider: 'barbie', value: 'none' }
+];
+lockpick(things, 'provider')
+// <- {
+//  'toys-r-us': { provider: 'toys-r-us', value: 'mild' },
+//  'barbie': { provider: 'barbie', value: 'none' }
+// }
 ```
 
 # Tests
