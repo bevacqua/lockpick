@@ -1,10 +1,10 @@
 {
-  "name": "dragula.js",
-  "version": "1.5.0",
-  "description": "Drag and drop so simple it hurts",
-  "main": "dist/dragula.js",
+  "name": "lockpick",
+  "version": "0.0.0",
+  "description": "Transform hastables into arrays and back into hashtables",
+  "main": "dist/lockpick",
   "ignore": [],
-  "homepage": "https://github.com/bevacqua/dragula",
+  "homepage": "https://github.com/bevacqua/lockpick",
   "authors": [
     "Nicolas Bevacqua <nicolasbevacqua@gmail.com>"
   ],
