@@ -1,6 +1,6 @@
 {
   "name": "lockpick",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Transform hastables into arrays and back into hashtables",
   "main": "dist/lockpick",
   "ignore": [],
